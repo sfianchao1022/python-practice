@@ -43,7 +43,17 @@ print(courseName.find('beginners'))  # find 'beginners' start at index 11
 print(courseName.replace('beginners', 'absolute beginners'))
 print('python' in courseName)  # return boolean
 
+# calculation
+# import math -> python3 math module
+print(10+4)
+print(7-0.8)
+print(10/3)  # float除法
+print(10//3)  # integer除法
+print(10*3)
+print(10**3)  # 次方
 
-
-
-
+print(round(3.2))  # round() 四捨五入
+print(round(5.5))
+print(round(5.4))
+print(abs(-5.8))  # absolute 絕對值
+print(abs(7.7))
