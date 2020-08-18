@@ -27,3 +27,34 @@ elif len(name) > 50:
     print('name must be a maximum of characters')
 else:
     print('good name!')
+
+# weight = int(input('weight ? : '))
+# unit = input('(L)bs or (K)g ? : ')
+# if unit.lower() == 'l':  # 全部轉成lower case
+#     weight *= 0.45
+#     print(f'you are {weight} kilograms')
+# else:
+#     weight /= 0.45
+#     print(f'you are {weight} pounds')
+
+# print * 1~10
+print('print 1~10')
+i = 1
+while i <= 10:
+    print('*' * i)
+    i += 1  # python沒有i++
+print('done')
+
+# guess game
+print('Guess game !')
+secretNumber = 9
+guessCount = 0
+guessLimit = 3
+while guessCount < guessLimit:
+    guessNumber = int(input('guess a number : '))
+    if guessNumber == secretNumber:
+        print('you win the game!')
+        break  # 跳出while loop
+    guessCount += 1
+else:  # while後可以接else -> while 跑完以後要做的
+    print('you lose!')
