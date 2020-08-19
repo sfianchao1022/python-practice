@@ -28,21 +28,21 @@ elif len(name) > 50:
 else:
     print('good name!')
 
-# weight = int(input('weight ? : '))
-# unit = input('(L)bs or (K)g ? : ')
-# if unit.lower() == 'l':  # 全部轉成lower case
-#     weight *= 0.45
-#     print(f'you are {weight} kilograms')
-# else:
-#     weight /= 0.45
-#     print(f'you are {weight} pounds')
+weight = int(input('weight ? : '))
+unit = input('(L)bs or (K)g ? : ')
+if unit.lower() == 'l':  # 全部轉成lower case
+    weight *= 0.45
+    print(f'you are {weight} kilograms')
+else:
+    weight /= 0.45
+    print(f'you are {weight} pounds')
 
 # print * 1~10
 print('print 1~10')
-i = 1
-while i <= 10:
-    print('*' * i)
-    i += 1  # python沒有i++
+count = 1
+while count <= 10:
+    print('*' * count)
+    count += 1  # python沒有i++
 print('done')
 
 # guess game
@@ -58,3 +58,33 @@ while guessCount < guessLimit:
     guessCount += 1
 else:  # while後可以接else -> while 跑完以後要做的
     print('you lose!')
+
+# car game
+command = ''
+started = False
+while True:
+    command = input('car game > ').lower()
+    if command == 'start':
+        # if判斷式內的變數為真(true)，就跑if 不用管原本變數是true or false
+        if started:  # 等同於 if started == 'True'
+            print('car already started')
+        else:
+            started = True
+            print('car started')
+    elif command == 'stop':
+        # if判斷式內的變數不為真(not true)，就跑if 不用管原本變數是true or false
+        if not started:  # 等同於 if started == 'False'
+            print('car already stopped')
+        else:
+            started = False
+            print('car stopped')
+    elif command == 'quit':
+        break
+    elif command == 'help':
+        print('''
+        start - to start the car
+        stop - to stop the car
+        help - get some help
+        ''')
+    else:
+        print("sorry we don't understand your command")
