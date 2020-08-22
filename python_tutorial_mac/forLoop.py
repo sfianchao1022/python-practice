@@ -19,6 +19,22 @@ numbers.reverse()
 numbers2 = numbers.copy()  # numbers2 = numbers[:]
 print(numbers2)
 
+# tuple 唯讀的list
+tup = (1, 3.14, 'orange')  # (wrong) tup[0] = 5 tuple無法被修改
+print(tup[2])
+
+# unpacking 開箱:將打包好的資料取出來 也適用於list
+tup_a = (1, 2, 6, 'apple')
+'''
+簡化以下寫法 -> unpacking
+a = tup_a[0]
+b = tup_a[1]
+c = tup_a[2]
+d = tup_a[3]
+'''
+a, b, c, d = tup_a  # tuple 依序取出 element 存入變數中
+print(d)
+
 # python for loop 類似 java foreach 用法
 for item in list_a:
     print(item)
@@ -56,7 +72,7 @@ for i in numbers:
     print(output)
 
 # find the Max number
-# print(max(num))
+'''print(max(num))'''
 num = [3, 6, 10, 4, 7, 9]
 max = num[0]
 for temp in num:

@@ -1,12 +1,12 @@
 course = 'Python for "Beginners"'
 course2 = "python's course for beginners"
-email = '''
+email = """
 hi Ian,
 
 this is the first email sent to you!
 
 ,best regards
-'''
+"""
 print(course)
 print(course2)
 print(email)
@@ -22,9 +22,9 @@ print(course[-3])
 name = "jennifer"
 print(name[1:-1])  # 從最後一個-1
 
+# formatted Strings f'...{variable}...' 用大括弧包住變數可以直接寫在string內
 firstName = 'Ian'
 lastName = 'Chao'
-# formatted Strings f'...{variable}...' 用大括弧包住變數可以直接寫在string內
 print(firstName + ' [' + lastName + '] is a coder')
 msg = f'{firstName} [{lastName}] is a coder'
 print(msg)
@@ -44,7 +44,7 @@ print(courseName.replace('beginners', 'absolute beginners'))
 print('python' in courseName)  # return boolean
 
 # calculation
-# import math -> python3 math module
+'''import math -> python3 math module'''
 print(10+4)
 print(7-0.8)
 print(10/3)  # float除法
