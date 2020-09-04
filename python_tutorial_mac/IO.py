@@ -17,6 +17,10 @@ print(is_published)
 # print('hi '+my_name)
 
 # 多行註解 command + /
+<<<<<<< HEAD
+=======
+'''也是多行註解'''
+>>>>>>> 22f5f8903c72e122f61118a20749a40ee666be27
 # birth_year=input('Birth year : ')
 # print(type(birth_year))# 查看型態
 # age=2019-int(birth_year)# int()轉換成integer
