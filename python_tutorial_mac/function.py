@@ -27,3 +27,13 @@ def squ(number):
 
 print(square(3))
 print(squ(3))  # 若沒有return type會回傳none(object)
+
+
+# converter
+def kg_to_lbs(weight):
+    return weight / 0.45
+
+
+def lbs_to_kg(weight):
+    return weight * 0.45
+
