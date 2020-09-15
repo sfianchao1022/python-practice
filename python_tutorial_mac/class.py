@@ -33,7 +33,7 @@ p1 = Person("Ian")
 print(p1.name)
 p1.talk()
 
-# inheritance
+# inheritance 繼承
 class Animal:
     def walk(self):
         print("walk")

@@ -37,3 +37,11 @@ def kg_to_lbs(weight):
 def lbs_to_kg(weight):
     return weight * 0.45
 
+
+# find max
+def find_max(numbers):
+    maximum = numbers[0]
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+    return maximum
