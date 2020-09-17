@@ -5,3 +5,5 @@ git clone test
 Pull test
 
 windows push test
+
+Repo rename
