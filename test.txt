@@ -1,0 +1,7 @@
+test
+
+git clone test
+
+Pull test
+
+windows push test

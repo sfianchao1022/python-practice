@@ -39,11 +39,11 @@ print(d)
 for item in list_a:
     print(item)
 
-# range()
-for item in range(10):
+# range() 通常用於for loop
+for item in range(10):  # 建立範圍0~9的整數列表 (for跑10次）
     print(item)
 
-for item in range(1, 10):
+for item in range(1, 10):  # 建立範圍1~10的整數列表
     print(item)
 
 for item in range(1, 10, 2):  # print 1~10 公差2
