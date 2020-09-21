@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首頁</title>
+</head>
+<body>
+<!--繼承base.html-->
+{% extends 'base.html' %}
+
+<!--沒有在block裡面的元素不會顯示 而base.html的所有元素都會顯示-->
+{% block content %}
+<ul>
+    <li>item 3</li>
+    <li>item 4</li>
+</ul>
+
+<div class="row">
+    {% for fruit in fruits %}
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="{{ fruit.image }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ fruit.name }}</h5>
+                <p class="card-text">${{ fruit.price }}</p>
+                <a href="#" class="btn btn-primary">Buy it!</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+<!-- template tag : {% 包住python程式碼, {{ 包住要替換的變數-->
+{% for fruit in fruits %}
+<ul>
+    <li>{{ fruit.name }}(${{ fruit.price }})</li>
+</ul>
+<!--在html需要有tag包住 所以加endfor-->
+{% endfor %}
+
+</body>
+</html>
