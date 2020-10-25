@@ -1,4 +1,4 @@
-# python tutorial
+# README
 
 ---
 
@@ -12,3 +12,12 @@
 > windows : C:\Python38
 
 ---
+
+## function
+- str()
+int to string
+
+- reverse(object)
+digits = [1, 2 3]
+rev_digits = reverse(digits)
+
